@@ -1,0 +1,167 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES 
+%----------------------------------------------------------------------------------------
+
+\documentclass[12pt]{article} 
+\usepackage[margin=1in]{geometry} % For page dimensions, margins, etc.
+\usepackage{fancyhdr} % For custom headers
+\usepackage{lastpage} % To determine the last page for the footer
+\usepackage{mathtools} % For mathematical typesetting
+\usepackage{amssymb} % For mathematical symbols, etc.
+\usepackage{graphicx} % Required to insert images
+\usepackage{subfig} % Used for subfigures
+\usepackage{array} % 
+\usepackage{lscape} % 
+\usepackage{hyperref} %For URL
+\usepackage[nottoc,numbib]{tocbibind}
+\usepackage{multirow} % 
+\usepackage{xcolor} % 
+\usepackage{listings} % Required for insertion of code
+\usepackage[framed]{mcode} % MATLAB code listing based on lstlisting 
+
+%----------------------------------------------------------------------------------------
+%	OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+
+\linespread{1.2} % Line spacing size
+\geometry{headheight=15pt,headsep=0.15in,includehead} % Level 1 heading adjustments
+
+% Set up the header and footer
+\pagestyle{fancy}
+\lhead{\hmwkAuthorNameI} % Top left header
+%\lhead{\hmwkGroup} % Use this one for group reports, and comment the upper line
+\chead{\hmwkClass} % Center header
+\rhead{\hmwkTitle} % Top right header
+\lfoot{} % Bottom left footer, left blank
+\rfoot{Page\ \thepage\ of\ \pageref{LastPage}} % Bottom right footer
+\cfoot{} % Bottom center footer, left blank
+\renewcommand\headrulewidth{0.4pt} % Size of the header rule
+\renewcommand\footrulewidth{0.4pt} % Size of the footer rule
+
+\setlength\parindent{0pt} % Removes all indentation from paragraphs
+
+%----------------------------------------------------------------------------------------
+%	HOMEWORK AND STUDENT DETAILS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\hmwkTitle}{Homework\ \#0} % Assignment title
+\newcommand{\hmwkDueDate}{Monday, Oct 8, 2018} % Due date 
+\newcommand{\hmwkClass}{UUM\ 500E} % Course/class code
+\newcommand{\hmwkClassInstructor}{Asst. Assoc. Prof. Dr. } % Teacher/lecturer Asst. Assoc. Prof. Dr.
+%\newcommand{\hmwkGroup}{Group \#3} % Comment this line out one for group reports
+
+
+% Students' full names
+\newcommand{\hmwkAuthorNameI}{Ertugrul Baris Ondes} % 1st Author's Name
+%\newcommand{\hmwkAuthorNameII}{} % 2nd Author's Name
+%\newcommand{\hmwkAuthorNameIII}{} % 3rd Author's Name
+%\newcommand{\hmwkAuthorNameIV}{} % 4th Author's Name
+
+% Students' IDs
+\newcommand{\hmwkAuthorIDI}{110110110}
+%\newcommand{\hmwkAuthorIDII}{}
+%\newcommand{\hmwkAuthorIDIII}{}
+%\newcommand{\hmwkAuthorIDIV}{}
+
+% Students' e-mail addresses to be contacted
+\newcommand{\hmwkAuthorEmailI}{ondes@itu.edu.tr} % 1st Author's Email
+%\newcommand{\hmwkAuthorEmailII}{} % 2nd Author's Email
+%\newcommand{\hmwkAuthorEmailIII}{} % 3rd Author's Email
+%\newcommand{\hmwkAuthorEmailIV}{} % 4th Author's Email
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+\pagenumbering{gobble}
+\title{
+	\includegraphics[width=0.5\linewidth]{./fig/itu_logo}\\	
+	\vspace{.5in}
+	\textmd{\textbf{\hmwkClass:\ \hmwkTitle}}\\
+	\normalsize\vspace{0.1in}\small{Due\ on\ \hmwkDueDate}\\
+	\vspace{0.1in}\large{\textit{\hmwkClassInstructor}}
+	\vspace{1in}
+}
+
+\author{
+	%First Author
+	\textbf{\hmwkAuthorNameI}\thanks{\hmwkAuthorEmailI} \ - \textbf{\hmwkAuthorIDI} \\
+	%Second Author
+	%\textbf{\hmwkAuthorNameII}\thanks{\hmwkAuthorEmailII} \ - \textbf{\hmwkAuthorIDII} \\
+	%Third Author
+	%\textbf{\hmwkAuthorNameIII}\thanks{\hmwkAuthorEmailIII} \ - \textbf{\hmwkAuthorIDIII} \\
+	%Fourth Author
+	%\textbf{\hmwkAuthorNameVI}\thanks{\hmwkAuthorEmailVI} \ - \textbf{\hmwkAuthorIDVI} \\
+	}
+\date{} % Insert date here if you want it to appear below your name
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL COMMANDS
+%----------------------------------------------------------------------------------------
+
+%\newcommand{\bx}{\boldsymbol{x}} % Shorter of bold x for equations
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle
+
+%----------------------------------------------------------------------------------------
+%	TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+%\setcounter{tocdepth}{1} % Use this for the levels of headings listed in the ToC
+
+\newpage
+\thispagestyle{empty} % For no page numbering
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+
+%----------------------------------------------------------------------------------------
+%	Section 1
+%----------------------------------------------------------------------------------------
+\input{Part01}
+
+%----------------------------------------------------------------------------------------
+%	Section 2
+%----------------------------------------------------------------------------------------
+
+\input{Part02}
+
+%----------------------------------------------------------------------------------------
+%	Section 3
+%----------------------------------------------------------------------------------------
+
+\input{Part03}
+
+%----------------------------------------------------------------------------------------
+%	Section 4
+%----------------------------------------------------------------------------------------
+
+\input{Part04}
+
+%----------------------------------------------------------------------------------------
+%	BIBLIOGRAPHY
+%----------------------------------------------------------------------------------------
+
+\newpage
+\bibliographystyle{IEEEtran}
+\bibliography{Main_Bib}
+
+%----------------------------------------------------------------------------------------
+%	APPENDICES
+%----------------------------------------------------------------------------------------
+
+\newpage
+\appendix
+
+\section{MATLAB Codes}
+
+\subsection{Initialization Code} \label{App_Int}
+
+\lstinputlisting[caption=Plot Code]{./code/PlotMFile.m}
+
+\end{document} 

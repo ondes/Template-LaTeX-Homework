@@ -1,5 +1,5 @@
 %----------------------------------------------------------------------------------------
-%	PACKAGES 
+%				PACKAGES				
 %----------------------------------------------------------------------------------------
 
 \documentclass[12pt]{article} 
@@ -10,17 +10,17 @@
 \usepackage{amssymb} % For mathematical symbols, etc.
 \usepackage{graphicx} % Required to insert images
 \usepackage{subfig} % Used for subfigures
-\usepackage{array} % 
-\usepackage{lscape} % 
+\usepackage{lscape} % To make defined pages' orientation landscape
 \usepackage{hyperref} %For URL
 \usepackage[nottoc,numbib]{tocbibind}
-\usepackage{multirow} % 
-\usepackage{xcolor} % 
+\usepackage{multirow} % For tables with multiple rows merged
+\usepackage{xcolor} % For custom colors to be used
 \usepackage{listings} % Required for insertion of code
-\usepackage[framed]{mcode} % MATLAB code listing based on lstlisting 
+\usepackage[framed]{mcode} %  MATLAB code listing based on lstlisting 
+\usepackage{float} % Required for positioning figures and table at the exact location of LaTeX code
 
 %----------------------------------------------------------------------------------------
-%	OTHER DOCUMENT CONFIGURATIONS 
+%				OTHER DOCUMENT CONFIGURATIONS 
 %----------------------------------------------------------------------------------------
 
 \linespread{1.2} % Line spacing size
@@ -41,8 +41,9 @@
 \setlength\parindent{0pt} % Removes all indentation from paragraphs
 
 %----------------------------------------------------------------------------------------
-%	HOMEWORK AND STUDENT DETAILS
+%				HOMEWORK AND STUDENT DETAILS
 %----------------------------------------------------------------------------------------
+
 
 \newcommand{\hmwkTitle}{Homework\ \#0} % Assignment title
 \newcommand{\hmwkDueDate}{Monday, Oct 8, 2018} % Due date 
@@ -70,7 +71,7 @@
 %\newcommand{\hmwkAuthorEmailIV}{} % 4th Author's Email
 
 %----------------------------------------------------------------------------------------
-%	TITLE PAGE
+%				TITLE PAGES
 %----------------------------------------------------------------------------------------
 \pagenumbering{gobble}
 \title{
@@ -95,13 +96,13 @@
 \date{} % Insert date here if you want it to appear below your name
 
 %----------------------------------------------------------------------------------------
-%	ADDITIONAL COMMANDS
+%				ADDITIONAL COMMANDS
 %----------------------------------------------------------------------------------------
 
 %\newcommand{\bx}{\boldsymbol{x}} % Shorter of bold x for equations
 
 %----------------------------------------------------------------------------------------
-%	DOCUMENT
+%				DOCUMENT
 %----------------------------------------------------------------------------------------
 
 \begin{document}
@@ -109,7 +110,7 @@
 \maketitle
 
 %----------------------------------------------------------------------------------------
-%	TABLE OF CONTENTS
+%				TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
 
 %\setcounter{tocdepth}{1} % Use this for the levels of headings listed in the ToC
@@ -117,12 +118,13 @@
 \newpage
 \thispagestyle{empty} % For no page numbering
 \tableofcontents
-\newpage
-\pagenumbering{arabic}
+\newpage 
+\pagenumbering{arabic} 
 
 %----------------------------------------------------------------------------------------
 %	Section 1
 %----------------------------------------------------------------------------------------
+
 \input{Part01}
 
 %----------------------------------------------------------------------------------------
@@ -144,7 +146,7 @@
 \input{Part04}
 
 %----------------------------------------------------------------------------------------
-%	BIBLIOGRAPHY
+%				BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
 
 \newpage
@@ -152,7 +154,7 @@
 \bibliography{Main_Bib}
 
 %----------------------------------------------------------------------------------------
-%	APPENDICES
+%				APPENDICES
 %----------------------------------------------------------------------------------------
 
 \newpage

@@ -1,5 +1,5 @@
 \section{Examples}
-
+\subsection{Equations}
 \[
   f(x) = 
     \underbrace{(x + 2)^3}_\text{text 1} + 
@@ -47,7 +47,6 @@ $$\lim_{x \to \infty}p(x) = \lim_{x \to -\infty}p(x) = \infty$$
 	\end{cases}
 \]
 
-Limit is given as:
 \[
 \lim_{(x,y)\to(0,0)}\frac{x^4-y^4}{(x^2+y^2)^2}
 \]
@@ -105,7 +104,17 @@ $$
 	\frac{\partial^2T}{\partial x^2}\Bigg\vert_{m,n} = \frac{\partial T/\partial x\vert_{m+1/2,n}-\partial T/\partial x\vert_{m-1/2,n}}{\Delta x}
 \end{equation*}
 
-\begin{figure}[h!]
+\begin{multline*}
+p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3- 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3 - 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3 \\ 
+- 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
+\end{multline*}
+
+\newpage
+\subsection{Figures}
+
+The following figures are just to show the positioning and sizing. They are not sized properly.
+
+\begin{figure}[H] % H is used due to float package. Others: h: here, t: top, b: bottom, p: page of float
 	\centering
 	\subfloat[Bode gain.]{\includegraphics[width=0.5\textwidth]{./fig/Q5_B_Bode_Gained.eps}\label{fig:Q5_B_Bode_Gained}}
 	\hfill
@@ -113,43 +122,36 @@ $$
 	\caption{Control plots.}
 \end{figure}
 
-\begin{figure}[thpb]
+\begin{figure}[H]  % H is used due to float package. Others: h: here, t: top, b: bottom, p: page of float
 	\centering
-	
 	\includegraphics[trim={0 7.5cm 0 7.5cm},clip,width=\linewidth]{./fig/00_F22_Model_v2}
-	
+	% trim={<left> <lower> <right> <upper>}
 	\caption{Simulink block that has the environment model}
 	\label{00F22Model} 
 \end{figure}
 
-\begin{figure}[thpb]
+\begin{figure}[H]  % H is used due to float package. Others: h: here, t: top, b: bottom, p: page of float
 	\centering	
-	\includegraphics[width=0.5\linewidth]{./fig/Q01_A_pzmap.eps}
+	\includegraphics[width=\linewidth]{./fig/Q01_A_pzmap.eps}
 	% trim={<left> <lower> <right> <upper>}
 	\caption{Pole-Zero map of the closed-loop transfer function for different $z$ values}
 	\label{fig:Q01_A_pzmap} 
 \end{figure}
 
+\subsection{Tables}
 
-\begin{table}[thpb]
+Create tables on \href{https://www.tablesgenerator.com/}{Latex Table Generator Website}. Or prepare in MS Office Excel and save as PDF file.
+
+\begin{table}[H]  % H is used due to float package. Others: h: here, t: top, b: bottom, p: page of float
 	\centering
 	\caption{Permutation results}
 	\label{tab:problem14}
 	\begin{tabular}{|c|c|c|}
 		\hline
-		\textbf{Permutation}        & \textbf{Value} & \textbf{Number of the elements that are greater \& on the left} \\ \hline
-		\multirow{4}{*}{\textbf{1}} & 2              & 0                                                               \\ \cline{2-3} 
-		& 3              & 0                                                               \\ \cline{2-3} 
-		& 4              & 0                                                               \\ \cline{2-3} 
-		& 1              & 3                                                               \\ \hline
-		\multirow{4}{*}{\textbf{2}} & 3              & 0                                                               \\ \cline{2-3} 
-		& 4              & 0                                                               \\ \cline{2-3} 
-		& 1              & 2                                                               \\ \cline{2-3} 
-		& 2              & 2                                                               \\ \hline
-		\multirow{5}{*}{\textbf{3}} & 5              & 0                                                               \\ \cline{2-3} 
-		& 1              & 1                                                               \\ \cline{2-3} 
-		& 4              & 1                                                               \\ \cline{2-3} 
-		& 2              & 2                                                               \\ \cline{2-3} 
-		& 3              & 2                                                               \\ \hline
+		\textbf{System}  & \multicolumn{1}{l|}{\textbf{$K_p$}} & \multicolumn{1}{l|}{\textbf{$\omega_n$}} \\ \hline
+		\multirow{4}{*}{$G_1(s)$} & 0                                   & 1                                \\ \cline{2-3} 
+		& 0                                   & 1                                \\ \cline{2-3} 
+		& 0                                   & 1                                \\ \cline{2-3} 
+		& 0                                   & 1                                \\ \hline
 	\end{tabular}
 \end{table}

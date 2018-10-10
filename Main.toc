@@ -1,7 +1,0 @@
-\contentsline {section}{\numberline {1}Examples}{1}{section.1}
-\contentsline {section}{\numberline {2}Sudo Part}{4}{section.2}
-\contentsline {section}{\numberline {3}Sudo Part}{4}{section.3}
-\contentsline {section}{\numberline {4}Sudo Part}{4}{section.4}
-\contentsline {section}{\numberline {5}References}{5}{section.5}
-\contentsline {section}{\numberline {A}MATLAB Codes}{6}{appendix.A}
-\contentsline {subsection}{\numberline {A.1}Initialization Code}{6}{subsection.A.1}

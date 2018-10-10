@@ -1,2 +1,4 @@
-# Latex-HW-Template-
-Homework template that I use for homeworks during undergraduate &amp; graduate studies
+# Latex-HW-Template
+Homework template that I use for homeworks during undergraduate &amp; graduate studies in Istanbul Technical University.
+
+It includes examples of different types of equations and required explanations are provided.

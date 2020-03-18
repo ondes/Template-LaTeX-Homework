@@ -3,21 +3,35 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass[12pt]{article} 
-\usepackage[margin=1in]{geometry} % For page dimensions, margins, etc.
-\usepackage{fancyhdr} % For custom headers
-\usepackage{lastpage} % To determine the last page for the footer
-\usepackage{mathtools} % For mathematical typesetting
-\usepackage{amssymb} % For mathematical symbols, etc.
-\usepackage{graphicx} % Required to insert images
-\usepackage{subfig} % Used for subfigures
-\usepackage{lscape} % To make defined pages' orientation landscape
-\usepackage{hyperref} %For URL
-\usepackage[nottoc,numbib]{tocbibind}
-\usepackage{multirow} % For tables with multiple rows merged
-\usepackage{xcolor} % For custom colors to be used
-\usepackage{listings} % Required for insertion of code
-\usepackage[framed]{mcode} %  MATLAB code listing based on lstlisting 
-\usepackage{float} % Required for positioning figures and table at the exact location of LaTeX code
+\usepackage[margin=1in]{geometry} 	% For page dimensions, margins, etc.
+\usepackage{fancyhdr} 			% Required for custom headers
+\usepackage{lastpage} 			% Required to determine the last page for the footer
+\usepackage{bm} 			% Bold math symbols inside the equation
+\usepackage{mathtools} 			% For mathematical typesetting, it includes amsmath, too
+%http://texdoc.net/texmf-dist/doc/latex/amsmath/amsldoc.pdf
+\usepackage{amssymb} 			% For mathematical symbols,
+%http://milde.users.sourceforge.net/LUCR/Math/mathpackages/amssymb-symbols.pdf
+\usepackage{array} 			% Extending the array and tabular environments
+\usepackage{multirow} 			% Create tabular cells spanning multiple rows
+\usepackage{graphicx} 			% Required to insert images
+\usepackage{subfig} 			% Used for subfigures
+\usepackage{lscape} 			% To make defined pages' orientation landscape
+\usepackage{hyperref} 			% Extensive support for hypertext (URL)
+\usepackage[nottoc,numbib]{tocbibind} 	% Add bibliography/index/contents to Table of Contents
+\usepackage{listings} 			% Required for insertion of code
+\usepackage{xcolor} 			% For custom colors to be used
+\usepackage{float} 			% Required for positioning figures and table at the exact location of LaTeX code
+\usepackage[shortlabels]{enumitem} 	% Control layout of itemize, enumerate, description
+\usepackage[framed,numbered]{mcode} 	% Pretty-print MATLAB source code
+\usepackage[open,openlevel=1]{bookmark} % It is used to have bookmarks in the PDF file created
+\usepackage{booktabs} 			% Publication quality tables in LaTeX
+% More info about quality tables: https://inf.ethz.ch/personal/markusp/teaching/guides/guide-tables.pdf
+\usepackage{comment} 			% Selectively include/exclude portions of text
+\usepackage{csquotes}			% Context sensitive quotation facilities
+\usepackage{enumitem} 			% To use different labeling for enumerate
+\usepackage[normalem]{ulem} 		% Package for underlining
+\usepackage[super]{nth}			% nth – Generate English ordinal numbers
+%\usepackage[style=verbose-ibid,backend=bibtex]{biblatex} % Sophisticated Bibliographies in LATEX
 
 %----------------------------------------------------------------------------------------
 %				OTHER DOCUMENT CONFIGURATIONS 
